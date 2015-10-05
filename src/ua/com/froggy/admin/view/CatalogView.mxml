@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+  Created by Aliaksei_Kalanitski on 10/5/2015.
+-->
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script><![CDATA[
+
+
+
+        ]]></fx:Script>
+
+    <s:HGroup top="0" right="0" height="30" left="0">
+        <s:Label id="search" text="Найти:" /> <s:TextInput id="searchField" /> <s:Button label="создать" />
+    </s:HGroup>
+
+    <s:DataGrid id="products" top="30" right="0" bottom="0" left="0">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="visible" headerText="Видимый"/>
+                <s:GridColumn dataField="imageURL" headerText="Изображение"/>
+                <s:GridColumn dataField="productId" headerText="ИД"/>
+                <s:GridColumn dataField="title" headerText="Название"/>
+                <s:GridColumn dataField="description" headerText="Описание"/>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+
+</s:Group>
